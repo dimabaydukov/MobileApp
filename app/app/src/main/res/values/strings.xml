@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">dino</string>
+    <string name="button1">Вырастить динозавра</string>
+    <string name="button2">Ваш мир</string>
+    <string name="button3">Магазин динозавров</string>
+    <string name="buttonback">Назад</string>
+    <string name="choosetime">Выбрать время</string>
+    <string name="stopgrowing">Остановить вылупление :(</string>
+</resources>
