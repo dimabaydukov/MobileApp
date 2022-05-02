@@ -3,10 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android Projects/Phone/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
-        <entry key="..\:/GitHub/MobileApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2085" />
-        <entry key="..\:/GitHub/MobileApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2085" />
-        <entry key="..\:/GitHub/MobileApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1535" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/drawable/ic_dino_dinosaur_icon_153299.xml" value="0.1535" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/font/montserrat_bold.xml" value="0.17395833333333333" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/font/montserrat_thin.xml" value="0.17395833333333333" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/layout/activity_main.xml" value="0.14375" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/layout/dino_shop.xml" value="0.14375" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/layout/grow_a_dino.xml" value="0.14375" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/layout/storage.xml" value="0.14375" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/layout/waiting.xml" value="0.14375" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/layout/your_world.xml" value="0.14375" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1535" />
+        <entry key="..\:/Android Projects/dino/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1535" />
       </map>
     </option>
   </component>
