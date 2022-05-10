@@ -10,20 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74f1ae58-98d0-4ec6-97f3-e9cdc80c2b73" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/render.experimental.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+=======
+>>>>>>> Stashed changes
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/GrowADino.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/Waiting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/grow_a_dino.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/grow_a_dino.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/waiting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/waiting.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/waiting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/waiting.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +46,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+<<<<<<< Updated upstream
+=======
+        <option value="valueResourceFile" />
+>>>>>>> Stashed changes
         <option value="Class" />
       </list>
     </option>
