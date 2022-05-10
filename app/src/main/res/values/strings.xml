@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">dino</string>
+    <string name="app_name">Динозаврики</string>
     <string name="button1">Вырастить динозавра</string>
     <string name="button2">Ваш мир</string>
     <string name="button3">Магазин динозавров</string>
