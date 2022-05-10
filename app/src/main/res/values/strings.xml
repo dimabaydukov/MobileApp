@@ -6,4 +6,6 @@
     <string name="buttonback">Назад</string>
     <string name="choosetime">Выбрать время</string>
     <string name="stopgrowing">Остановить вылупление :(</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
