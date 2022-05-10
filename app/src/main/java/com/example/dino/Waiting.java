@@ -1,28 +1,16 @@
 package com.example.dino;
 
 import android.content.Intent;
-<<<<<<< Updated upstream
-import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.widget.Button;
-=======
-import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.widget.Button;
 import android.widget.ImageView;
->>>>>>> Stashed changes
-import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Waiting extends AppCompatActivity {
 
-<<<<<<< Updated upstream
-    Button stopHatchingButton;
-    ProgressBar progressBar;
-=======
     Button timeButton;
     ImageView imageView13;
     int maxHeight;
@@ -40,17 +28,12 @@ public class Waiting extends AppCompatActivity {
             StopHatching();
         }
     };
->>>>>>> Stashed changes
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.waiting);
 
-<<<<<<< Updated upstream
-        stopHatchingButton = findViewById(R.id.stopHatchingButton);
-        progressBar = findViewById(R.id.progressBar);
-=======
         timeButton = findViewById(R.id.timeButton);
         imageView13 = findViewById(R.id.imageView13);
         maxHeight = imageView13.getHeight();
@@ -72,7 +55,6 @@ public class Waiting extends AppCompatActivity {
         };
 
         mainTimer.start();
->>>>>>> Stashed changes
     }
 
     @Override
@@ -80,18 +62,6 @@ public class Waiting extends AppCompatActivity {
         super.onStop();
         Toast.makeText(getApplicationContext(), "Не отвлекайтесь! Ваш динозавтрик убежит " +
                 "через 10 сек", Toast.LENGTH_LONG).show();
-<<<<<<< Updated upstream
-        new CountDownTimer(10000, 1000){
-
-            @Override
-            public void onTick(long l) { }
-
-            @Override
-            public void onFinish() {
-                StopHatching();
-            }
-        }.start();
-=======
         stopTimer.start();
     }
 
@@ -99,7 +69,6 @@ public class Waiting extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         stopTimer.cancel();
->>>>>>> Stashed changes
     }
 
     @Override
@@ -108,16 +77,11 @@ public class Waiting extends AppCompatActivity {
         StopHatching();
     }
 
-<<<<<<< Updated upstream
-    protected void StopHatching(){
-        //динозавтрик убежал
-=======
     private void StopHatching(){
         //динозавтрик убежал
         mainTimer.cancel();
         Toast.makeText(getApplicationContext(), "Ваш динозавтрик убежал :( ",
                 Toast.LENGTH_LONG).show();
->>>>>>> Stashed changes
         SwitchingToActivityMain();
     }
 
@@ -126,8 +90,6 @@ public class Waiting extends AppCompatActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
+
+
