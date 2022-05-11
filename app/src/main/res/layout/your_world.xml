@@ -32,19 +32,19 @@
                     android:id="@+id/buttonback"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/buttonback"
-                    android:onClick="goBack"
                     android:backgroundTint="@color/button1"
                     android:fontFamily="@font/montserrat_bold"
-                    />
+                    android:onClick="goBack"
+                    android:text="@string/buttonback" />
 
             </LinearLayout>
 
             <ScrollView
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
                 tools:ignore="SpeakableTextPresentCheck">>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
