@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Git/MobileApp/app/src/main/res/layout/activity_main.xml" value="0.2246376811594203" />
+        <entry key="..\:/Git/MobileApp/app/src/main/res/layout/dino_shop.xml" value="0.2246376811594203" />
+        <entry key="..\:/Git/MobileApp/app/src/main/res/layout/grow_a_dino.xml" value="0.2246376811594203" />
+        <entry key="..\:/Git/MobileApp/app/src/main/res/layout/waiting.xml" value="0.2246376811594203" />
+        <entry key="..\:/Git/MobileApp/app/src/main/res/layout/your_world.xml" value="0.2246376811594203" />
         <entry key="..\:/GitHub/MobileApp/app/src/main/res/drawable/ic_dino_dinosaur_icon_153299.xml" value="0.1535" />
         <entry key="..\:/GitHub/MobileApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2085" />
         <entry key="..\:/GitHub/MobileApp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2085" />
