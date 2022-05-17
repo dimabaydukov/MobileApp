@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dino">
         <activity
-            android:name=".Collection"
+            android:name=".DinoChoice"
             android:exported="false" />
         <activity
-            android:name=".DinoShopActivity"
+            android:name=".Collection"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

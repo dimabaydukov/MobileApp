@@ -10,22 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74f1ae58-98d0-4ec6-97f3-e9cdc80c2b73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dino_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dino_20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dino_30.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/DinoChoice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dino/DinoShopActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/DinoShopActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dino/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/Collection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dino/DinoShopActivity.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dino/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dino/YourWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/pixel_dinosaur_cute_character_happy_birthday_holiday_card_retro_style_434079_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/pixel_dinosaur.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dino_shop.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dino_choice.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/grow_a_dino.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/grow_a_dino.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/waiting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/waiting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/your_world.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/collection.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dino_choice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dino_choice.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,6 +67,9 @@
   </component>
   <component name="RecentsManager">
     <key name="android.template.1747020284">
+      <recent name="com.example.dino" />
+    </key>
+    <key name="android.template.1879368654">
       <recent name="com.example.dino" />
     </key>
   </component>

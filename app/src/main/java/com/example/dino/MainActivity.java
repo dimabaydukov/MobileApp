@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void growDino (View v){
-        Intent intent = new Intent(this, DinoShopActivity.class);
+        Intent intent = new Intent(this, DinoChoice.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
