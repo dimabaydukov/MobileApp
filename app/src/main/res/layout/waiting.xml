@@ -40,7 +40,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="393dp"
                         android:layout_marginTop="30dp"
-                        app:srcCompat="@drawable/pixel_dinosaur_cute_character_happy_birthday_holiday_card_retro_style_434079_5" />
+                        app:srcCompat="@drawable/pixel_dinosaur" />
 
                     <Button
                         android:id="@+id/timeButton"

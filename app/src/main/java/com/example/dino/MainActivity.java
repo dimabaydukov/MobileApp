@@ -17,11 +17,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void growDino (View v){
         Intent intent = new Intent(this, DinoShopActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
 
     public void yourWorld (View v){
-        Intent intent = new Intent(this, YourWorld.class);
+        Intent intent = new Intent(this, Collection.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
     }
 

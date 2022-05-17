@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Динозаврики</string>
     <string name="button1">Вырастить динозавра</string>
-    <string name="button2">Ваш мир</string>
+    <string name="button2">Коллекция динозавров</string>
     <string name="button3">Магазин динозавров</string>
     <string name="buttonback">Назад</string>
     <string name="choosetime">Выбрать время</string>

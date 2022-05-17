@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dino">
         <activity
-            android:name=".YourWorld"
+            android:name=".Collection"
             android:exported="false" />
         <activity
             android:name=".DinoShopActivity"
