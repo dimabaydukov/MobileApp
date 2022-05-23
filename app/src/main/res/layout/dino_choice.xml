@@ -96,7 +96,7 @@
                             android:layout_height="150dp"
                             android:layout_margin="20dp"
                             android:layout_weight="1"
-                            android:onClick="grow"
+                            android:onClick="grow10"
                             app:srcCompat="@drawable/dino_10" />
 
                         <TextView
@@ -112,7 +112,7 @@
                             android:layout_height="150dp"
                             android:layout_margin="20dp"
                             android:layout_weight="1"
-                            android:onClick="grow"
+                            android:onClick="grow20"
                             app:srcCompat="@drawable/dino_20" />
 
                         <TextView
@@ -128,7 +128,7 @@
                             android:layout_height="150dp"
                             android:layout_margin="20dp"
                             android:layout_weight="1"
-                            android:onClick="grow"
+                            android:onClick="grow30"
                             app:srcCompat="@drawable/dino_30" />
 
                     </LinearLayout>

@@ -1,11 +1,14 @@
 package com.example.dino;
 
+import static java.lang.Integer.parseInt;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.os.CountDownTimer;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,8 +17,9 @@ public class Waiting extends AppCompatActivity {
 
     Button timeButton;
     ImageView imageView13;
-    int maxHeight;
-    int timeForTimer = 10;
+    int timeForTimer;
+    ProgressBar progressBar;
+    int i = 0;
 
     CountDownTimer mainTimer;
 
@@ -26,7 +30,7 @@ public class Waiting extends AppCompatActivity {
 
         @Override
         public void onFinish() {
-            StopHatching();
+            stopHatching();
         }
     };
 
@@ -37,34 +41,47 @@ public class Waiting extends AppCompatActivity {
 
         timeButton = findViewById(R.id.timeButton);
         imageView13 = findViewById(R.id.imageView13);
-        maxHeight = imageView13.getHeight();
+        progressBar = (ProgressBar)findViewById(R.id.progressBar);
         imageView13.getLayoutParams().height = 250;
 
-        mainTimer = new CountDownTimer(timeForTimer*60000, 1000) {
+        Bundle arguments = getIntent().getExtras();
+        Dinosaurs dino = (Dinosaurs) arguments.getSerializable(Dinosaurs.class.getSimpleName());
+        timeForTimer = parseInt(dino.getTime());
+
+        imageView13.setImageResource(dino.getImg());
+
+        mainTimer = new CountDownTimer(timeForTimer*60000, 2000) {
             @Override
             public void onTick(long l) {
-                float change = 143/(timeForTimer*60000);
-                while (imageView13.getHeight() < maxHeight){
-                    imageView13.getLayoutParams().height += change;
+                if (imageView13.getLayoutParams().height < 650) {
+                    imageView13.getLayoutParams().height = imageView13.getLayoutParams().height + 1;
+                    imageView13.setMinimumHeight(imageView13.getLayoutParams().height);
                 }
+
+                i++;
+                progressBar.setProgress((int)i*100/(timeForTimer*30));
             }
 
             @Override
             public void onFinish() {
                 //сохраняем динозавтрика в список
+                Bundle arguments = getIntent().getExtras();
+                Dinosaurs dino = (Dinosaurs) arguments.getSerializable(Dinosaurs.class.getSimpleName());
+                Intent intent = new Intent(Waiting.this, Collection.class);
+                intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
             }
-        };
-
-        mainTimer.start();
+        }.start();
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
+    /*@Override
+    protected void onPause() {
+        super.onPause();
         Toast.makeText(getApplicationContext(), "Не отвлекайтесь! Ваш динозавтрик убежит " +
                 "через 10 сек", Toast.LENGTH_LONG).show();
         stopTimer.start();
-    }
+    }*/
 
     @Override
     protected void onRestart() {
@@ -73,28 +90,28 @@ public class Waiting extends AppCompatActivity {
     }
 
     @Override
-    protected void onPause() {
-        super.onPause();
-        Toast.makeText(getApplicationContext(), "ррр", Toast.LENGTH_LONG).show();
-    }
-
-    @Override
     protected void onDestroy() {
         super.onDestroy();
-        StopHatching();
+        stopHatching();
     }
 
-    private void StopHatching(){
+    public void onClickBack(View v){
+        stopHatching();
+        switchingToActivityMain();
+    }
+
+    public void stopHatching(){
         //динозавтрик убежал
         mainTimer.cancel();
+        stopTimer.cancel();
         Toast.makeText(getApplicationContext(), "Ваш динозавтрик убежал :( ",
                 Toast.LENGTH_LONG).show();
-        SwitchingToActivityMain();
+        switchingToActivityMain();
     }
 
-    public void SwitchingToActivityMain(){
+    public void switchingToActivityMain(){
         Intent intent = new Intent(this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);
     }
 }

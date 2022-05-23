@@ -13,6 +13,12 @@
             android:name=".DinoChoice"
             android:exported="false" />
         <activity
+            android:name=".GrowADino"
+            android:exported="false" />
+        <activity
+            android:name=".Waiting"
+            android:exported="false" />
+        <activity
             android:name=".Collection"
             android:exported="false" />
         <activity
