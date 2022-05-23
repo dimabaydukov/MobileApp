@@ -40,16 +40,26 @@
                         android:layout_width="wrap_content"
                         android:layout_height="393dp"
                         android:layout_marginTop="30dp"
+                        android:maxHeight="393dp"
                         app:srcCompat="@drawable/pixel_dinosaur" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:max="100"
+                        android:progress="0"/>
 
                     <Button
                         android:id="@+id/timeButton"
                         android:layout_width="wrap_content"
                         android:layout_height="83dp"
                         android:layout_gravity="center"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="15dp"
                         android:backgroundTint="@color/button1"
-                        android:onClick="StopHatching"
+                        android:onClick="onClickBack"
                         android:text="@string/stopgrowing"
                         android:textSize="16sp"
                         app:layout_constraintLeft_toLeftOf="parent"

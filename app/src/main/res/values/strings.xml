@@ -4,6 +4,6 @@
     <string name="button2">Коллекция динозавров</string>
     <string name="button3">Магазин динозавров</string>
     <string name="buttonback">Назад</string>
-    <string name="choosetime">Выбрать время</string>
+    <string name="choosetime">Начать вылупление</string>
     <string name="stopgrowing">Остановить вылупление :(</string>
 </resources>
