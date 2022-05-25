@@ -6,17 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class GrowADino extends AppCompatActivity {
 
     Button timeButton;
     TextView textViewGrow;
     ImageView imageView13;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,11 @@ public class GrowADino extends AppCompatActivity {
         //установка времени и переход на waiting
         Bundle arguments = getIntent().getExtras();
         Dinosaurs dino = (Dinosaurs) arguments.getSerializable(Dinosaurs.class.getSimpleName());
+
+        EditText dname = (EditText)findViewById(R.id.dname);
+        String name = dname.getText().toString();
+
+        dino.setName(name);
 
         Intent intent = new Intent(this, Waiting.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
