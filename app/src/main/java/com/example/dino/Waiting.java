@@ -20,6 +20,7 @@ public class Waiting extends AppCompatActivity {
     int timeForTimer;
     ProgressBar progressBar;
     int i = 0;
+    boolean store = true;
 
     CountDownTimer mainTimer;
 
@@ -30,7 +31,10 @@ public class Waiting extends AppCompatActivity {
 
         @Override
         public void onFinish() {
-            stopHatching();
+            if (store == true) {
+                mainTimer.cancel();
+                finish();
+            }
         }
     };
 
@@ -65,6 +69,7 @@ public class Waiting extends AppCompatActivity {
             @Override
             public void onFinish() {
                 //сохраняем динозавтрика в список
+                store = false;
                 Bundle arguments = getIntent().getExtras();
                 Dinosaurs dino = (Dinosaurs) arguments.getSerializable(Dinosaurs.class.getSimpleName());
                 Intent intent = new Intent(Waiting.this, Collection.class);
@@ -75,13 +80,15 @@ public class Waiting extends AppCompatActivity {
         }.start();
     }
 
-    /*@Override
+    @Override
     protected void onPause() {
         super.onPause();
-        Toast.makeText(getApplicationContext(), "Не отвлекайтесь! Ваш динозавтрик убежит " +
-                "через 10 сек", Toast.LENGTH_LONG).show();
-        stopTimer.start();
-    }*/
+        if (store == true) {
+            Toast.makeText(getApplicationContext(), "Не отвлекайтесь! Ваш динозавтрик убежит " +
+                    "через 10 сек", Toast.LENGTH_LONG).show();
+            stopTimer.start();
+        }
+    }
 
     @Override
     protected void onRestart() {
@@ -92,21 +99,19 @@ public class Waiting extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        stopHatching();
+        if (store == true)
+            stopHatching();
     }
 
     public void onClickBack(View v){
-        stopHatching();
         switchingToActivityMain();
     }
 
     public void stopHatching(){
         //динозавтрик убежал
         mainTimer.cancel();
-        stopTimer.cancel();
         Toast.makeText(getApplicationContext(), "Ваш динозавтрик убежал :( ",
                 Toast.LENGTH_LONG).show();
-        switchingToActivityMain();
     }
 
     public void switchingToActivityMain(){
