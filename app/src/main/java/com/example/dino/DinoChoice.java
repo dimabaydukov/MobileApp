@@ -24,7 +24,7 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void grow10 (View v){
-        Dinosaurs dino = new Dinosaurs("name", "1", R.drawable.dino_one);
+        Dinosaurs dino = new Dinosaurs("name", "1", R.drawable.onedino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -32,7 +32,7 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void grow20 (View v){
-        Dinosaurs dino = new Dinosaurs("name", "2", R.drawable.dino_three);
+        Dinosaurs dino = new Dinosaurs("name", "2", R.drawable.threeedino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -40,7 +40,7 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void grow30 (View v){
-        Dinosaurs dino = new Dinosaurs("name", "3", R.drawable.dino_four);
+        Dinosaurs dino = new Dinosaurs("name", "3", R.drawable.fourdino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -48,7 +48,7 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void grow40 (View v){
-        Dinosaurs dino = new Dinosaurs("name", "4", R.drawable.dino_five);
+        Dinosaurs dino = new Dinosaurs("name", "4", R.drawable.fiveedino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -56,7 +56,7 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void grow50 (View v){
-        Dinosaurs dino = new Dinosaurs("name", "5", R.drawable.dino_six);
+        Dinosaurs dino = new Dinosaurs("name", "5", R.drawable.sixdino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -64,7 +64,7 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void grow60 (View v){
-        Dinosaurs dino = new Dinosaurs("name", "6", R.drawable.dino_twoo);
+        Dinosaurs dino = new Dinosaurs("name", "6", R.drawable.twodino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
