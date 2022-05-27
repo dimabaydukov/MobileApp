@@ -113,7 +113,7 @@ public class Waiting extends AppCompatActivity {
     public void stopHatching(){
         mPlayer = MediaPlayer.create(this, R.raw.press);
         mPlayer.start();
-        
+
         //динозавтрик убежал
         mainTimer.cancel();
         Toast.makeText(getApplicationContext(), "Ваш динозавтрик убежал :( ",
