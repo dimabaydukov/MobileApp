@@ -33,7 +33,7 @@ public class DinoChoice extends AppCompatActivity {
         mPlayer = MediaPlayer.create(this, R.raw.press);
         mPlayer.start();
 
-        Dinosaurs dino = new Dinosaurs("name", "1", R.drawable.onedino);
+        Dinosaurs dino = new Dinosaurs("name", "10", R.drawable.onedino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -44,7 +44,7 @@ public class DinoChoice extends AppCompatActivity {
         mPlayer = MediaPlayer.create(this, R.raw.press);
         mPlayer.start();
 
-        Dinosaurs dino = new Dinosaurs("name", "2", R.drawable.threeedino);
+        Dinosaurs dino = new Dinosaurs("name", "20", R.drawable.threeedino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -55,7 +55,7 @@ public class DinoChoice extends AppCompatActivity {
         mPlayer = MediaPlayer.create(this, R.raw.press);
         mPlayer.start();
 
-        Dinosaurs dino = new Dinosaurs("name", "3", R.drawable.fourdino);
+        Dinosaurs dino = new Dinosaurs("name", "30", R.drawable.fourdino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -66,7 +66,7 @@ public class DinoChoice extends AppCompatActivity {
         mPlayer = MediaPlayer.create(this, R.raw.press);
         mPlayer.start();
 
-        Dinosaurs dino = new Dinosaurs("name", "4", R.drawable.fiveedino);
+        Dinosaurs dino = new Dinosaurs("name", "40", R.drawable.fiveedino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -77,7 +77,7 @@ public class DinoChoice extends AppCompatActivity {
         mPlayer = MediaPlayer.create(this, R.raw.press);
         mPlayer.start();
 
-        Dinosaurs dino = new Dinosaurs("name", "5", R.drawable.sixdino);
+        Dinosaurs dino = new Dinosaurs("name", "50", R.drawable.sixdino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -88,7 +88,7 @@ public class DinoChoice extends AppCompatActivity {
         mPlayer = MediaPlayer.create(this, R.raw.press);
         mPlayer.start();
 
-        Dinosaurs dino = new Dinosaurs("name", "6", R.drawable.twodino);
+        Dinosaurs dino = new Dinosaurs("name", "60", R.drawable.twodino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);

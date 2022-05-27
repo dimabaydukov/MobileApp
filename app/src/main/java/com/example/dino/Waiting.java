@@ -75,6 +75,7 @@ public class Waiting extends AppCompatActivity {
             public void onFinish() {
                 //сохраняем динозавтрика в список
                 store = false;
+                play();
                 Bundle arguments = getIntent().getExtras();
                 Dinosaurs dino = (Dinosaurs) arguments.getSerializable(Dinosaurs.class.getSimpleName());
                 Intent intent = new Intent(Waiting.this, Collection.class);
@@ -93,6 +94,8 @@ public class Waiting extends AppCompatActivity {
 
         if(isScreenOn){
             if (store == true) {
+                mPlayer = MediaPlayer.create(this, R.raw.toast);
+                mPlayer.start();
                 Toast.makeText(getApplicationContext(), "Не отвлекайтесь! Ваш динозаврик убежит " +
                         "через 10 сек", Toast.LENGTH_LONG).show();
                 stopTimer.start();
@@ -114,11 +117,13 @@ public class Waiting extends AppCompatActivity {
     }
 
     public void onClickBack(View v){
+        mPlayer = MediaPlayer.create(this, R.raw.stop);
+        mPlayer.start();
         switchingToActivityMain();
     }
 
     public void stopHatching(){
-        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer = MediaPlayer.create(this, R.raw.toast);
         mPlayer.start();
 
         //динозавтрик убежал
@@ -131,5 +136,10 @@ public class Waiting extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);
+    }
+
+    public void play(){
+        mPlayer = MediaPlayer.create(this, R.raw.newdino);
+        mPlayer.start();
     }
 }
