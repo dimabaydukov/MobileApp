@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/dino_background">
 
 
     <LinearLayout
@@ -41,7 +42,7 @@
                         android:layout_height="393dp"
                         android:layout_marginTop="30dp"
                         android:maxHeight="393dp"
-                        app:srcCompat="@drawable/pixel_dinosaur" />
+                        app:srcCompat="@drawable/dino_twoo" />
 
                     <ProgressBar
                         android:id="@+id/progressBar"

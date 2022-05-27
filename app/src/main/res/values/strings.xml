@@ -6,4 +6,6 @@
     <string name="buttonback">Назад</string>
     <string name="choosetime">Начать выращивание</string>
     <string name="stopgrowing">Остановить выращивание :(</string>
+    <string name="choosedino">Выберите динозаврика, которого хотите вырастить</string>
+    <string name="enterthename">Введите имя динозаврика</string>
 </resources>
