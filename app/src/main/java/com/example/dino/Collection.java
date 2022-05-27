@@ -113,6 +113,12 @@ public class Collection extends AppCompatActivity implements Serializable {
         mPlayer = MediaPlayer.create(this, R.raw.press);
         mPlayer.start();
 
+        try {
+            save();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);
