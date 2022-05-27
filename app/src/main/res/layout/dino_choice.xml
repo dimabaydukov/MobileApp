@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center|clip_vertical|center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/dino_background">
 
 
     <LinearLayout
@@ -42,11 +43,14 @@
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginStart="5dp"
                     android:layout_marginLeft="15dp"
-                    android:layout_weight="1"
                     android:fontFamily="@font/montserrat_bold"
-                    android:text="Выберите динозаврика, которого хотите вырастить" />
+                    android:gravity="center"
+                    android:text="@string/choosedino"
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -97,7 +101,7 @@
                             android:layout_margin="20dp"
                             android:layout_weight="1"
                             android:onClick="grow10"
-                            app:srcCompat="@drawable/dino_10" />
+                            app:srcCompat="@drawable/dino_one" />
 
                         <TextView
                             android:id="@+id/textView3"
@@ -113,7 +117,7 @@
                             android:layout_margin="20dp"
                             android:layout_weight="1"
                             android:onClick="grow20"
-                            app:srcCompat="@drawable/dino_20" />
+                            app:srcCompat="@drawable/dino_three" />
 
                         <TextView
                             android:id="@+id/textView4"
@@ -129,7 +133,7 @@
                             android:layout_margin="20dp"
                             android:layout_weight="1"
                             android:onClick="grow30"
-                            app:srcCompat="@drawable/dino_30" />
+                            app:srcCompat="@drawable/dino_four" />
 
                         <TextView
                             android:id="@+id/textView5"
@@ -145,7 +149,7 @@
                             android:layout_margin="20dp"
                             android:layout_weight="1"
                             android:onClick="grow40"
-                            app:srcCompat="@drawable/dino_10" />
+                            app:srcCompat="@drawable/dino_five" />
 
                         <TextView
                             android:id="@+id/textView6"
@@ -161,7 +165,7 @@
                             android:layout_margin="20dp"
                             android:layout_weight="1"
                             android:onClick="grow50"
-                            app:srcCompat="@drawable/dino_20" />
+                            app:srcCompat="@drawable/dino_six" />
 
                         <TextView
                             android:id="@+id/textView7"
@@ -177,7 +181,7 @@
                             android:layout_margin="20dp"
                             android:layout_weight="1"
                             android:onClick="grow60"
-                            app:srcCompat="@drawable/dino_30" />
+                            app:srcCompat="@drawable/dino_twoo" />
 
                     </LinearLayout>
                 </LinearLayout>

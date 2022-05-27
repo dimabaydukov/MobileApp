@@ -84,7 +84,7 @@ public class Waiting extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         if (store == true) {
-            Toast.makeText(getApplicationContext(), "Не отвлекайтесь! Ваш динозавтрик убежит " +
+            Toast.makeText(getApplicationContext(), "Не отвлекайтесь! Ваш динозаврик убежит " +
                     "через 10 сек", Toast.LENGTH_LONG).show();
             stopTimer.start();
         }

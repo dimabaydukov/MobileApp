@@ -13,15 +13,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74f1ae58-98d0-4ec6-97f3-e9cdc80c2b73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/collection.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dino_background.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dino_five.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dino_four.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dino_one.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dino_six.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dino_three.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dino_twoo.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dino/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/Collection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dino/DinoAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/DinoAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dino/DinoChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/DinoChoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dino/GrowADino.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/GrowADino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/dino/Waiting.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/dino/Waiting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/dino_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/dino_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/dino_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/pixel_dinosaur.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/collection.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/collection.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dino_choice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dino_choice.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/grow_a_dino.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/grow_a_dino.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_with_dino.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_with_dino.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/waiting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/waiting.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +45,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[SYKNW19B14021998]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[e161f9ef]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -70,6 +86,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1653668257595" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
@@ -78,6 +95,9 @@
     </key>
     <key name="android.template.1879368654">
       <recent name="com.example.dino" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
     <key name="android.template.1136682888">
       <recent name="com.example.dino" />
