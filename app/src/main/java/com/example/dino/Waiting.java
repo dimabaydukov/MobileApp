@@ -2,9 +2,11 @@ package com.example.dino;
 
 import static java.lang.Integer.parseInt;
 
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.PowerManager;
 import android.view.View;
 import android.os.CountDownTimer;
 import android.widget.Button;
@@ -86,10 +88,15 @@ public class Waiting extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        if (store == true) {
-            Toast.makeText(getApplicationContext(), "Не отвлекайтесь! Ваш динозаврик убежит " +
-                    "через 10 сек", Toast.LENGTH_LONG).show();
-            stopTimer.start();
+        PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
+        boolean isScreenOn = pm.isInteractive();
+
+        if(isScreenOn){
+            if (store == true) {
+                Toast.makeText(getApplicationContext(), "Не отвлекайтесь! Ваш динозаврик убежит " +
+                        "через 10 сек", Toast.LENGTH_LONG).show();
+                stopTimer.start();
+            }
         }
     }
 
