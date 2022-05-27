@@ -3,6 +3,7 @@ package com.example.dino;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -11,6 +12,8 @@ import com.google.android.material.textfield.TextInputLayout;
 
 public class DinoChoice extends AppCompatActivity {
 
+    MediaPlayer mPlayer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,12 +21,18 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void goBack (View v){
+        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer.start();
+
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);
     }
 
     public void grow10 (View v){
+        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer.start();
+
         Dinosaurs dino = new Dinosaurs("name", "1", R.drawable.onedino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
@@ -32,6 +41,9 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void grow20 (View v){
+        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer.start();
+
         Dinosaurs dino = new Dinosaurs("name", "2", R.drawable.threeedino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
@@ -40,6 +52,9 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void grow30 (View v){
+        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer.start();
+
         Dinosaurs dino = new Dinosaurs("name", "3", R.drawable.fourdino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
@@ -48,6 +63,9 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void grow40 (View v){
+        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer.start();
+
         Dinosaurs dino = new Dinosaurs("name", "4", R.drawable.fiveedino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
@@ -56,6 +74,9 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void grow50 (View v){
+        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer.start();
+
         Dinosaurs dino = new Dinosaurs("name", "5", R.drawable.sixdino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
@@ -64,6 +85,9 @@ public class DinoChoice extends AppCompatActivity {
     }
 
     public void grow60 (View v){
+        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer.start();
+
         Dinosaurs dino = new Dinosaurs("name", "6", R.drawable.twodino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);

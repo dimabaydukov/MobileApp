@@ -7,6 +7,7 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
@@ -28,6 +29,8 @@ public class Collection extends AppCompatActivity implements Serializable {
     static ListView dinoCollection;
     static ArrayList<Dinosaurs> dinosaurs = new ArrayList<Dinosaurs>();
     DinoAdapter dinoAdapter;
+
+    MediaPlayer mPlayer;
 
     File myFile= new File(Environment.getExternalStorageDirectory(), "/newFile");
 
@@ -107,6 +110,9 @@ public class Collection extends AppCompatActivity implements Serializable {
     }
 
     public void goBack (View v){
+        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer.start();
+
         Intent intent = new Intent(this, MainActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);

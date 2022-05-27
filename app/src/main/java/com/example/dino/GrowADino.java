@@ -3,6 +3,7 @@ package com.example.dino;
 import static java.lang.Integer.parseInt;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,7 +21,7 @@ public class GrowADino extends AppCompatActivity {
     TextView textViewGrow;
     ImageView imageView13;
 
-
+    MediaPlayer mPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,9 @@ public class GrowADino extends AppCompatActivity {
     }
 
     public void setTime(View v) {
+        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer.start();
+
         //установка времени и переход на waiting
         Bundle arguments = getIntent().getExtras();
         Dinosaurs dino = (Dinosaurs) arguments.getSerializable(Dinosaurs.class.getSimpleName());
@@ -56,6 +60,9 @@ public class GrowADino extends AppCompatActivity {
     }
 
     public void goBack (View v){
+        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer.start();
+
         Intent intent = new Intent(this, DinoChoice.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         startActivity(intent);

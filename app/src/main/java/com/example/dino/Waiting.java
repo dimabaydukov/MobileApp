@@ -3,6 +3,7 @@ package com.example.dino;
 import static java.lang.Integer.parseInt;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.os.CountDownTimer;
@@ -14,6 +15,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Waiting extends AppCompatActivity {
+
+    MediaPlayer mPlayer;
 
     Button timeButton;
     ImageView imageView13;
@@ -108,6 +111,9 @@ public class Waiting extends AppCompatActivity {
     }
 
     public void stopHatching(){
+        mPlayer = MediaPlayer.create(this, R.raw.press);
+        mPlayer.start();
+        
         //динозавтрик убежал
         mainTimer.cancel();
         Toast.makeText(getApplicationContext(), "Ваш динозавтрик убежал :( ",
