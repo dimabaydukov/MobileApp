@@ -33,7 +33,7 @@ public class DinoChoice extends AppCompatActivity {
         mPlayer = MediaPlayer.create(this, R.raw.press);
         mPlayer.start();
 
-        Dinosaurs dino = new Dinosaurs("name", "10", R.drawable.onedino);
+        Dinosaurs dino = new Dinosaurs("name", "1", R.drawable.onedino);
         Intent intent = new Intent(this, GrowADino.class);
         intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);

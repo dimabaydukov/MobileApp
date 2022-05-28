@@ -16,6 +16,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.Timer;
+
 public class Waiting extends AppCompatActivity {
 
     MediaPlayer mPlayer;
@@ -81,6 +83,7 @@ public class Waiting extends AppCompatActivity {
                 Intent intent = new Intent(Waiting.this, Collection.class);
                 intent.putExtra(Dinosaurs.class.getSimpleName(), dino);
                 intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                finish();
                 startActivity(intent);
             }
         }.start();
